@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.andreveiga.cmc.destaques-refresh</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+	</array>
+	<key>NSCalendarsWriteOnlyAccessUsageDescription</key>
+	<string>Para adicionar eventos do calendário escolar ao seu calendário.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Para adicionar eventos do calendário escolar ao seu calendário.</string>
+	<key>CFBundleDisplayName</key>
+	<string>CMC</string>
+</dict>
+</plist>
