@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Onda — layer 2 of 3 (middle): back wave band, crosses in front of the sun.
+       Amplitude is kept low relative to the 100pt band thickness; steeper waves
+       pinch to a point at the crossings. -->
+  <path fill="#FFFFFF" d="M 152 580
+    C 272 520, 392 640, 512 580
+    C 632 520, 752 640, 872 580
+    L 872 680
+    C 752 740, 632 620, 512 680
+    C 392 740, 272 620, 152 680
+    Z"/>
+</svg>

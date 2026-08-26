@@ -8,11 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		000000000000000200000001 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 000000000000000200000010 /* SwiftSoup */; };
+		D6CF9B1F303F533F00BBE0C5 /* 02-onda-tras.svg in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B0E303F533F00BBE0C5 /* 02-onda-tras.svg */; };
+		D6CF9B20303F533F00BBE0C5 /* 03-onda-frente.svg in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B0F303F533F00BBE0C5 /* 03-onda-frente.svg */; };
+		D6CF9B25303F533F00BBE0C5 /* 01-sol.svg in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B0D303F533F00BBE0C5 /* 01-sol.svg */; };
+		D6CF9B2E303F53DD00BBE0C5 /* PLAN.md in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B2D303F53DD00BBE0C5 /* PLAN.md */; };
+		D6CF9B30303F53E400BBE0C5 /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B2F303F53E400BBE0C5 /* CLAUDE.md */; };
+		D6CF9B33303F53F000BBE0C5 /* refresh-fixtures.sh in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B31303F53F000BBE0C5 /* refresh-fixtures.sh */; };
+		D6CF9B35303F542900BBE0C5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B34303F542900BBE0C5 /* .gitignore */; };
+		D6CF9B37303F573500BBE0C5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B36303F573500BBE0C5 /* README.md */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000000000200000021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000100000000;
+			remoteInfo = CMC;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* CMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000121 /* CMCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CF9B0D303F533F00BBE0C5 /* 01-sol.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "01-sol.svg"; sourceTree = "<group>"; };
+		D6CF9B0E303F533F00BBE0C5 /* 02-onda-tras.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "02-onda-tras.svg"; sourceTree = "<group>"; };
+		D6CF9B0F303F533F00BBE0C5 /* 03-onda-frente.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "03-onda-frente.svg"; sourceTree = "<group>"; };
+		D6CF9B2D303F53DD00BBE0C5 /* PLAN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PLAN.md; sourceTree = "<group>"; };
+		D6CF9B2F303F53E400BBE0C5 /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
+		D6CF9B31303F53F000BBE0C5 /* refresh-fixtures.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "refresh-fixtures.sh"; sourceTree = "<group>"; };
+		D6CF9B34303F542900BBE0C5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D6CF9B36303F573500BBE0C5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -24,6 +50,11 @@
 		000000000000000000000011 /* CMCTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CMCTests;
+			sourceTree = "<group>";
+		};
+		D6CF9B28303F53AA00BBE0C5 /* .local-docs */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ".local-docs";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -46,8 +77,15 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
+				D6CF9B28303F53AA00BBE0C5 /* .local-docs */,
 				000000000000000000000010 /* CMC */,
 				000000000000000000000011 /* CMCTests */,
+				D6CF9B1C303F533F00BBE0C5 /* Design */,
+				D6CF9B2D303F53DD00BBE0C5 /* PLAN.md */,
+				D6CF9B2F303F53E400BBE0C5 /* CLAUDE.md */,
+				D6CF9B32303F53F000BBE0C5 /* Scripts */,
+				D6CF9B34303F542900BBE0C5 /* .gitignore */,
+				D6CF9B36303F573500BBE0C5 /* README.md */,
 				000000000000000000000020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +97,40 @@
 				000000000000000000000121 /* CMCTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D6CF9B10303F533F00BBE0C5 /* 01-onda */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF9B0D303F533F00BBE0C5 /* 01-sol.svg */,
+				D6CF9B0E303F533F00BBE0C5 /* 02-onda-tras.svg */,
+				D6CF9B0F303F533F00BBE0C5 /* 03-onda-frente.svg */,
+			);
+			path = "01-onda";
+			sourceTree = "<group>";
+		};
+		D6CF9B1B303F533F00BBE0C5 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF9B10303F533F00BBE0C5 /* 01-onda */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		D6CF9B1C303F533F00BBE0C5 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF9B1B303F533F00BBE0C5 /* Icon */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		D6CF9B32303F53F000BBE0C5 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF9B31303F53F000BBE0C5 /* refresh-fixtures.sh */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,6 +148,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				000000000000000000000010 /* CMC */,
+				D6CF9B28303F53AA00BBE0C5 /* .local-docs */,
 			);
 			name = CMC;
 			packageProductDependencies = (
@@ -130,10 +203,10 @@
 			);
 			mainGroup = 000000000000000000000001;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 90;
 			packageReferences = (
 				000000000000000200000030 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 000000000000000000000020 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,6 +221,14 @@
 		000000000000000140000000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				D6CF9B33303F53F000BBE0C5 /* refresh-fixtures.sh in Resources */,
+				D6CF9B2E303F53DD00BBE0C5 /* PLAN.md in Resources */,
+				D6CF9B35303F542900BBE0C5 /* .gitignore in Resources */,
+				D6CF9B1F303F533F00BBE0C5 /* 02-onda-tras.svg in Resources */,
+				D6CF9B30303F53E400BBE0C5 /* CLAUDE.md in Resources */,
+				D6CF9B20303F533F00BBE0C5 /* 03-onda-frente.svg in Resources */,
+				D6CF9B25303F533F00BBE0C5 /* 01-sol.svg in Resources */,
+				D6CF9B37303F573500BBE0C5 /* README.md in Resources */,
 			);
 		};
 		000000000000000240000000 /* Resources */ = {
@@ -177,35 +258,6 @@
 			targetProxy = 000000000000000200000021 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXContainerItemProxy section */
-		000000000000000200000021 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 000000000000000000000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 000000000000000100000000;
-			remoteInfo = CMC;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		000000000000000200000030 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.7.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		000000000000000200000010 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 000000000000000200000030 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCBuildConfiguration section */
 		000000000000000011000000 /* Debug configuration for PBXProject "CMC" */ = {
@@ -343,14 +395,20 @@
 		000000000000000111000000 /* Debug configuration for PBXNativeTarget "CMC" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = CMC;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4F6YBAR2KZ;
-				ENABLE_PREVIEWS = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CMC;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Para adicionar eventos do calendário escolar ao seu calendário.";
+				INFOPLIST_KEY_NSCalendarsWriteOnlyAccessUsageDescription = "Para adicionar eventos do calendário escolar ao seu calendário.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -359,8 +417,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
@@ -369,26 +428,33 @@
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		000000000000000112000000 /* Release configuration for PBXNativeTarget "CMC" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = CMC;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4F6YBAR2KZ;
-				ENABLE_PREVIEWS = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CMC;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Para adicionar eventos do calendário escolar ao seu calendário.";
+				INFOPLIST_KEY_NSCalendarsWriteOnlyAccessUsageDescription = "Para adicionar eventos do calendário escolar ao seu calendário.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -397,8 +463,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
@@ -407,12 +474,13 @@
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -486,6 +554,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		000000000000000200000030 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		000000000000000200000010 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000000000000000200000030 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 000000000000000000000000 /* Project object */;
 }

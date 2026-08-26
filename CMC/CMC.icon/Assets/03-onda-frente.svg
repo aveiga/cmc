@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Onda — layer 3 of 3 (front): front wave band, phase-inverted so it interlocks
+       with the back wave instead of hiding it -->
+  <path fill="#FFFFFF" d="M 152 730
+    C 272 790, 392 670, 512 730
+    C 632 790, 752 670, 872 730
+    L 872 830
+    C 752 890, 632 770, 512 830
+    C 392 890, 272 770, 152 830
+    Z"/>
+</svg>

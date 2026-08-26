@@ -10,11 +10,5 @@
 	<array>
 		<string>fetch</string>
 	</array>
-	<key>NSCalendarsWriteOnlyAccessUsageDescription</key>
-	<string>Para adicionar eventos do calendário escolar ao seu calendário.</string>
-	<key>NSCalendarsUsageDescription</key>
-	<string>Para adicionar eventos do calendário escolar ao seu calendário.</string>
-	<key>CFBundleDisplayName</key>
-	<string>CMC</string>
 </dict>
 </plist>
