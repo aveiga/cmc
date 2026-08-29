@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Política de Privacidade — CMC
 permalink: /privacy/
 ---

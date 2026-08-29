@@ -1,0 +1,19 @@
+title: CMC
+description: >-
+  Aplicação não oficial para iOS — destaques, calendário e ementas do dia a dia escolar.
+theme: jekyll-theme-minimal
+baseurl: /cmc
+
+# This repo is an iOS app, not a website. Only the docs pages are published;
+# everything else is excluded so Jekyll does not copy the whole source tree.
+exclude:
+  - CMC/
+  - CMCTests/
+  - CMC.xcodeproj/
+  - Config/
+  - Design/
+  - Scripts/
+  - ci_scripts/
+  - build/
+  - CLAUDE.md
+  - PLAN.md
