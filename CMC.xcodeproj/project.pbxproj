@@ -8,14 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		000000000000000200000001 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 000000000000000200000010 /* SwiftSoup */; };
-		D6CF9B1F303F533F00BBE0C5 /* 02-onda-tras.svg in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B0E303F533F00BBE0C5 /* 02-onda-tras.svg */; };
-		D6CF9B20303F533F00BBE0C5 /* 03-onda-frente.svg in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B0F303F533F00BBE0C5 /* 03-onda-frente.svg */; };
-		D6CF9B25303F533F00BBE0C5 /* 01-sol.svg in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B0D303F533F00BBE0C5 /* 01-sol.svg */; };
-		D6CF9B2E303F53DD00BBE0C5 /* PLAN.md in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B2D303F53DD00BBE0C5 /* PLAN.md */; };
-		D6CF9B30303F53E400BBE0C5 /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B2F303F53E400BBE0C5 /* CLAUDE.md */; };
-		D6CF9B33303F53F000BBE0C5 /* refresh-fixtures.sh in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B31303F53F000BBE0C5 /* refresh-fixtures.sh */; };
-		D6CF9B35303F542900BBE0C5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B34303F542900BBE0C5 /* .gitignore */; };
-		D6CF9B37303F573500BBE0C5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9B36303F573500BBE0C5 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +23,7 @@
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* CMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000121 /* CMCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6879185304384F1009F8FC5 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		D6CF9B0D303F533F00BBE0C5 /* 01-sol.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "01-sol.svg"; sourceTree = "<group>"; };
 		D6CF9B0E303F533F00BBE0C5 /* 02-onda-tras.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "02-onda-tras.svg"; sourceTree = "<group>"; };
 		D6CF9B0F303F533F00BBE0C5 /* 03-onda-frente.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "03-onda-frente.svg"; sourceTree = "<group>"; };
@@ -77,9 +70,10 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				D6CF9B28303F53AA00BBE0C5 /* .local-docs */,
+				D6879186304384F1009F8FC5 /* ci_scripts */,
 				000000000000000000000010 /* CMC */,
 				000000000000000000000011 /* CMCTests */,
+				D6CF9B28303F53AA00BBE0C5 /* .local-docs */,
 				D6CF9B1C303F533F00BBE0C5 /* Design */,
 				D6CF9B2D303F53DD00BBE0C5 /* PLAN.md */,
 				D6CF9B2F303F53E400BBE0C5 /* CLAUDE.md */,
@@ -97,6 +91,14 @@
 				000000000000000000000121 /* CMCTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D6879186304384F1009F8FC5 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D6879185304384F1009F8FC5 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 		D6CF9B10303F533F00BBE0C5 /* 01-onda */ = {
@@ -148,7 +150,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				000000000000000000000010 /* CMC */,
-				D6CF9B28303F53AA00BBE0C5 /* .local-docs */,
 			);
 			name = CMC;
 			packageProductDependencies = (
@@ -221,14 +222,6 @@
 		000000000000000140000000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				D6CF9B33303F53F000BBE0C5 /* refresh-fixtures.sh in Resources */,
-				D6CF9B2E303F53DD00BBE0C5 /* PLAN.md in Resources */,
-				D6CF9B35303F542900BBE0C5 /* .gitignore in Resources */,
-				D6CF9B1F303F533F00BBE0C5 /* 02-onda-tras.svg in Resources */,
-				D6CF9B30303F53E400BBE0C5 /* CLAUDE.md in Resources */,
-				D6CF9B20303F533F00BBE0C5 /* 03-onda-frente.svg in Resources */,
-				D6CF9B25303F533F00BBE0C5 /* 01-sol.svg in Resources */,
-				D6CF9B37303F573500BBE0C5 /* README.md in Resources */,
 			);
 		};
 		000000000000000240000000 /* Resources */ = {
