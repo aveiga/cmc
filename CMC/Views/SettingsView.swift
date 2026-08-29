@@ -35,7 +35,7 @@ struct SettingsView: View {
             } header: {
                 Text("Sobre")
             } footer: {
-                Text("Aplicação não oficial, sem qualquer ligação ao Colégio Marista de Carcavelos. Todos os conteúdos pertencem ao colégio e são lidos do site público.")
+                Text("Aplicação **não oficial**. Sem qualquer afiliação, patrocínio ou ligação ao Colégio Marista de Carcavelos. Todos os conteúdos pertencem ao Colégio e são lidos do seu site público.")
             }
         }
         .navigationTitle("Definições")
