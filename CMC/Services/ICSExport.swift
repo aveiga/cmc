@@ -66,7 +66,13 @@ nonisolated enum ICSExport {
         lines.append("END:VCALENDAR")
 
         let name = filename ?? "Calendario-CMC-\(year.startYear)-\(year.endYear).ics"
-        let url = FileManager.default.temporaryDirectory.appendingPathComponent(name)
+        // Each export gets its own temp directory: the filename is derived from the school
+        // year, so two exports of the same year would otherwise overwrite one another at a
+        // shared path. Keeping the directory unique preserves the readable share filename.
+        let dir = FileManager.default.temporaryDirectory
+            .appendingPathComponent(UUID().uuidString, isDirectory: true)
+        try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        let url = dir.appendingPathComponent(name)
         try lines.joined(separator: "\r\n").data(using: .utf8)?.write(to: url, options: .atomic)
         return Result(fileURL: url, exportedCount: exported, skippedCount: skipped)
     }

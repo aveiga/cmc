@@ -102,12 +102,12 @@ final class NotificationService {
         content.sound = .default
 
         if posts.count == 1, let post = posts.first {
-            content.title = "Novo destaque"
+            content.title = String(localized: "Novo destaque")
             content.body = post.titleText
             content.userInfo = ["postID": post.id]
         } else {
             // Several at once collapse into one summary rather than a burst.
-            content.title = "\(posts.count) novos destaques"
+            content.title = String(localized: "\(posts.count) novos destaques")
             content.body = posts.prefix(3).map(\.titleText).joined(separator: " · ")
         }
 

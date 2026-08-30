@@ -80,8 +80,19 @@ Getting these wrong wastes a lot of time, so they are repeated here from `PLAN.m
   URLs, 12 calendar months, 104 events, both ementas tracks.
 - Keep files under ~200 lines. Reuse `DestaqueOpener` for all PDF presentation — there
   should only ever be one PDF viewer in the app.
-- **Language:** UI strings are **Portuguese (pt-PT)** — the content is Portuguese.
-  Code, comments, types and commit messages are in English.
+- **Language:** the app ships **pt-PT and English**. `pt-PT` is the source language, so
+  the Portuguese string written inline *is* the key; add the English side to
+  `CMC/Localizable.xcstrings`. Code, comments, types and commit messages stay English.
+  Three things that silently break this:
+  - `Text(someString)` takes a `String`, not a `LocalizedStringKey`, so it is **not**
+    localized. Wrap it: `Text(LocalizedStringKey(x))`.
+  - `UNMutableNotificationContent.title`/`.body` are plain `String` — use
+    `String(localized:)` or the notification ships untranslated.
+  - Never pin `.locale(Locale(identifier: "pt_PT"))` on a date format. Dates must follow
+    the user's locale now that English is a supported language.
+
+  **Scraped content stays Portuguese in every language** — month names, event titles and
+  ementas headings are data from the site, not app chrome. Only translate UI you wrote.
 
 ## iOS specifics worth remembering
 

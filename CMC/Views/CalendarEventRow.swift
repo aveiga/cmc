@@ -113,7 +113,7 @@ private struct DateBadge: View {
     }
 
     private func month(_ date: Date) -> some View {
-        Text(date.formatted(.dateTime.month(.abbreviated).locale(Locale(identifier: "pt_PT"))))
+        Text(date.formatted(.dateTime.month(.abbreviated)))
             .font(.caption2)
             .textCase(.uppercase)
             .foregroundStyle(.secondary)

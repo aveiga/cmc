@@ -1,0 +1,17 @@
+{
+  "sourceLanguage": "pt-PT",
+  "strings": {
+    "Para adicionar eventos do calendário escolar ao seu calendário.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To add school calendar events to your calendar."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
