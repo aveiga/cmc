@@ -7,4 +7,6 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - run: xcodebuild test -project CMC.xcodeproj -scheme CMC -destination 'platform=macOS'
+      # CODE_SIGNING_ALLOWED=NO: the runner has no "Mac Development" certificate for
+      # the team, and unit tests do not need a signed bundle.
+      - run: xcodebuild test -project CMC.xcodeproj -scheme CMC -destination 'platform=macOS' CODE_SIGNING_ALLOWED=NO
