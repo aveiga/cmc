@@ -400,6 +400,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Config/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CMC;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "Para adicionar eventos do calendário escolar ao seu calendário.";
 				INFOPLIST_KEY_NSCalendarsWriteOnlyAccessUsageDescription = "Para adicionar eventos do calendário escolar ao seu calendário.";
@@ -446,6 +447,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Config/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CMC;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "Para adicionar eventos do calendário escolar ao seu calendário.";
 				INFOPLIST_KEY_NSCalendarsWriteOnlyAccessUsageDescription = "Para adicionar eventos do calendário escolar ao seu calendário.";
