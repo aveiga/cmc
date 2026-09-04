@@ -37,8 +37,12 @@ struct PDFSheet: View {
                     }
                 }
             }
+            // PDFKit's scroll view is invisible to the navigation bar, so the
+            // bar never turns opaque on scroll and the buttons end up sitting
+            // on the page itself. Pin it.
+            .opaqueNavigationBar()
         }
-        .frame(minWidth: 480, minHeight: 560)
+        .macWindowSize(minWidth: 480, minHeight: 560)
     }
 }
 

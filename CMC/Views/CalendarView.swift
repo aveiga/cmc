@@ -130,7 +130,7 @@ struct CalendarView: View {
                         CalendarEventRow(event: event) { eventToAdd = event }
                     }
                 } header: {
-                    Text("\(month.name) \(String(month.year))")
+                    Text(month.localizedTitle)
                 }
             }
         }

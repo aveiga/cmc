@@ -112,14 +112,7 @@ struct DatedEvent: Identifiable, Hashable {
         event.sortDate ?? monthStart
     }
 
-    var monthStart: Date {
-        var components = DateComponents()
-        components.year = month.year
-        components.month = month.monthNumber
-        components.day = 1
-        components.hour = 12
-        return DateExpressionParser.calendar.date(from: components) ?? .distantFuture
-    }
+    var monthStart: Date { month.firstDay }
 
     var monthEnd: Date {
         let calendar = DateExpressionParser.calendar
@@ -129,6 +122,7 @@ struct DatedEvent: Identifiable, Hashable {
         return last
     }
 
-    /// "Setembro 2026" — the section header in the chronological list.
-    var monthTitle: String { "\(month.name) \(month.year)" }
+    /// "Setembro 2026" — the section header in the chronological list, in the
+    /// user's locale.
+    var monthTitle: String { month.localizedTitle }
 }

@@ -47,6 +47,25 @@ nonisolated struct MonthSection: Identifiable, Codable, Hashable {
     var events: [CalendarEvent]
 
     var id: String { "\(year)-\(monthNumber)" }
+
+    /// Midday on the first day of the month, so a timezone shift can never move
+    /// it into the neighbouring month.
+    var firstDay: Date {
+        var components = DateComponents()
+        components.year = year
+        components.month = monthNumber
+        components.day = 1
+        components.hour = 12
+        return DateExpressionParser.calendar.date(from: components) ?? .distantFuture
+    }
+
+    /// The section header: "Setembro 2026" in pt-PT, "September 2026" in
+    /// English. `name` is scraped Portuguese, so the header is rebuilt from
+    /// `monthNumber`/`year` and follows the user's locale — unlike event titles,
+    /// a month is a date, not site copy.
+    var localizedTitle: String {
+        firstDay.formatted(.dateTime.month(.wide).year()).localizedCapitalized
+    }
 }
 
 /// A single `<p>` of the accordion: one date line plus one or more event lines.

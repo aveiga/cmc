@@ -91,8 +91,12 @@ Getting these wrong wastes a lot of time, so they are repeated here from `PLAN.m
   - Never pin `.locale(Locale(identifier: "pt_PT"))` on a date format. Dates must follow
     the user's locale now that English is a supported language.
 
-  **Scraped content stays Portuguese in every language** — month names, event titles and
-  ementas headings are data from the site, not app chrome. Only translate UI you wrote.
+  **Scraped content stays Portuguese in every language** — event titles, the raw date
+  lines and ementas headings are data from the site, not app chrome. Only translate UI
+  you wrote. The one exception is a **calendar month header**: a month is a date, so it
+  is rebuilt from `MonthSection.monthNumber`/`year` (`MonthSection.localizedTitle`) and
+  follows the user's locale. Never render `MonthSection.name` in the UI — it is the
+  scraped Portuguese string and only exists for parsing and diagnostics.
 
 ## iOS specifics worth remembering
 

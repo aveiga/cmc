@@ -64,6 +64,29 @@ extension View {
         #endif
     }
 
+    /// Keeps the navigation bar's background opaque. iOS only: `.navigationBar`
+    /// does not exist on macOS.
+    @ViewBuilder
+    func opaqueNavigationBar() -> some View {
+        #if os(iOS)
+        toolbarBackground(.visible, for: .navigationBar)
+        #else
+        self
+        #endif
+    }
+
+    /// A floor on a sheet's size, for macOS windows only. On iOS a sheet is
+    /// already the width of the screen, and forcing a wider frame overflows it
+    /// on both sides — which clips the leading and trailing toolbar buttons.
+    @ViewBuilder
+    func macWindowSize(minWidth: CGFloat, minHeight: CGFloat) -> some View {
+        #if os(iOS)
+        self
+        #else
+        frame(minWidth: minWidth, minHeight: minHeight)
+        #endif
+    }
+
     /// Half-height sheet on iOS; macOS sizes its sheets itself.
     @ViewBuilder
     func mediumSheet() -> some View {
